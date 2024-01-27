@@ -11,7 +11,7 @@
         <p>How can we estimate the area of this triangle?</p>
         <div class="trisim">
             <div class="triangle"></div>
-            <div class="quarters"> 
+            <div id="quarters">
                 <span class="quarter"></span>
                 <br>
                 <span class="quarter"></span>
@@ -26,14 +26,33 @@
                 <span class="quarter"></span>
                 <span class="quarter"></span>
             </div>
+            <div id="nickels">
+                <span class="nickel"></span>
+            </div>
+        </div>
+        <div>
             <button onclick="quarters()">Quarters!</button>
-            <button>Nickels!</button>
+            <button onclick="nickels()">Nickels!</button>
             <button>Pennies!</button>
             <button>Dimes!</button>
         </div>
         <script>
             function quarters() {
-                var x = document.getElementById()
+                var x = document.getElementById("quarters");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+            function nickels() {
+                var x = document.getElementById("nickels");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                    document.getElementById("quarters").style.display = "none";
+                } else {
+                    x.style.display = "none";
+                }
             }
         </script>
         <button><a href="#2">Next</a></button>
