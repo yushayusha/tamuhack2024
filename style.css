@@ -10,13 +10,36 @@ body {
     font-size: xx-large;
 }
 
+button {
+    background-color: #d8d8d8;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 20px;
+    cursor:pointer;
+    color: gray;
+}
+
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
 .page {
     padding-top: 5%;
     padding-bottom: 12%;
 }
-.trisim{
-    height:450px;
+
+.trisim {
+    height: 450px;
 }
+
 .triangle {
     width: 0px;
     height: 0px;
@@ -26,12 +49,14 @@ body {
     z-index: 2;
     transform: rotate(0deg);
 }
+
 #quarters {
     margin-top: -400px;
     margin-left: -25px;
     display: none;
     z-index: 1;
 }
+
 .quarter {
     height: 100px;
     width: 100px;
@@ -40,12 +65,14 @@ body {
     border-radius: 50%;
     display: inline-block;
 }
+
 #nickels {
     margin-top: -400px;
     margin-left: -25px;
     display: none;
     z-index: 1;
 }
+
 .nickel {
     height: 80px;
     width: 80px;
@@ -54,12 +81,14 @@ body {
     border-radius: 50%;
     display: inline-block;
 }
+
 #pennies {
     margin-top: -400px;
     margin-left: -25px;
     display: none;
     z-index: 1;
 }
+
 .penny {
     height: 62px;
     width: 62px;
@@ -68,25 +97,29 @@ body {
     border-radius: 50%;
     display: inline-block;
 }
-#infinity1, #infinity2 {
+
+#infinity1,
+#infinity2 {
     background-size: contain;
-    border: dashed 40px;
-    border-color:#fd1d1d;
-    width: 300px;
-    height: 300px;
+    border: dashed 20px;
+    border-color: #fd1d1d;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     margin-left: -20px;
     animation-name: spin;
     animation-duration: 5000ms;
     animation-iteration-count: infinite;
-    animation-timing-function: linear; 
+    animation-timing-function: linear;
     display: inline-block;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
     }
-    @keyframes spin {
-      from {
-            transform:rotate(0deg);
-        }
-        to {
-            transform:rotate(360deg);
-        }
+
+    to {
+        transform: rotate(360deg);
     }
+}
