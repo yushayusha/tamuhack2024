@@ -30,23 +30,41 @@ body {
     margin-top: -400px;
     margin-left: -25px;
     display: none;
+    z-index: 1;
 }
 .quarter {
     height: 100px;
     width: 100px;
-    background-color: #bbb;
+    background: url("https://upload.wikimedia.org/wikipedia/en/0/0f/2022_Washington_quarter_obverse.jpeg");
+    background-size: 100px;
     border-radius: 50%;
     display: inline-block;
 }
-#nickles {
-    margin-top: -800px;
+#nickels {
+    margin-top: -400px;
     margin-left: -25px;
     display: none;
+    z-index: 1;
 }
 .nickel {
-    height: 75px;
-    width: 75px;
-    background-color: #bbb;
+    height: 80px;
+    width: 80px;
+    background: url("https://upload.wikimedia.org/wikipedia/en/c/ce/US_Nickel_Obverse.jpeg");
+    background-size: 80px;
+    border-radius: 50%;
+    display: inline-block;
+}
+#pennies {
+    margin-top: -400px;
+    margin-left: -25px;
+    display: none;
+    z-index: 1;
+}
+.penny {
+    height: 62px;
+    width: 62px;
+    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/US_One_Cent_Obv.png/220px-US_One_Cent_Obv.png");
+    background-size: 62px;
     border-radius: 50%;
     display: inline-block;
 }

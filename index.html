@@ -7,8 +7,7 @@
 
 <body>
     <div id="1" class="page">
-        <h1>Page 1</h1>
-        <p>How can we estimate the area of this triangle?</p>
+        <h1>Which one measures the area of this triangle the best?</h1>
         <div class="trisim">
             <div class="triangle"></div>
             <div id="quarters">
@@ -28,19 +27,66 @@
             </div>
             <div id="nickels">
                 <span class="nickel"></span>
+                <br>
+                <span class="nickel"></span>
+                <span class="nickel"></span>
+                <br>
+                <span class="nickel"></span>
+                <span class="nickel"></span>
+                <span class="nickel"></span>
+                <br>
+                <span class="nickel"></span>
+                <span class="nickel"></span>
+                <span class="nickel"></span>
+                <span class="nickel"></span>
+                <br>
+                <span class="nickel"></span>
+                <span class="nickel"></span>
+                <span class="nickel"></span>
+                <span class="nickel"></span>
+                <span class="nickel"></span>
+            </div>
+            <div id="pennies">
+                <span class="penny"></span>
+                <br>
+                <span class="penny"></span>
+                <span class="penny"></span>
+                <br>
+                <span class="penny"></span>
+                <span class="penny"></span>
+                <span class="penny"></span>
+                <br>
+                <span class="penny"></span>
+                <span class="penny"></span>
+                <span class="penny"></span>
+                <span class="penny"></span>
+                <br>
+                <span class="penny"></span>
+                <span class="penny"></span>
+                <span class="penny"></span>
+                <span class="penny"></span>
+                <span class="penny"></span>
+                <br>
+                <span class="penny"></span>
+                <span class="penny"></span>
+                <span class="penny"></span>
+                <span class="penny"></span>
+                <span class="penny"></span>
+                <span class="penny"></span>
             </div>
         </div>
         <div>
             <button onclick="quarters()">Quarters!</button>
             <button onclick="nickels()">Nickels!</button>
-            <button>Pennies!</button>
-            <button>Dimes!</button>
+            <button onclick="pennies()">Pennies!</button>
         </div>
         <script>
             function quarters() {
                 var x = document.getElementById("quarters");
                 if (x.style.display === "none") {
                     x.style.display = "block";
+                    document.getElementById("nickels").style.display = "none";
+                    document.getElementById("pennies").style.display = "none";
                 } else {
                     x.style.display = "none";
                 }
@@ -50,12 +96,23 @@
                 if (x.style.display === "none") {
                     x.style.display = "block";
                     document.getElementById("quarters").style.display = "none";
+                    document.getElementById("pennies").style.display = "none";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+            function pennies() {
+                var x = document.getElementById("pennies");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                    document.getElementById("quarters").style.display = "none";
+                    document.getElementById("nickels").style.display = "none";
                 } else {
                     x.style.display = "none";
                 }
             }
         </script>
-        <button><a href="#2">Next</a></button>
+        <button><a href="#2">or Infinity?</a></button>
     </div>
     <div id="2" class="page">
         <h1>Page 2</h1>
