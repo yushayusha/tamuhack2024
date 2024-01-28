@@ -1,0 +1,12 @@
+.water {
+  width: 200px;
+  height: 63px;
+  background-color: #74372b;
+}
+.container {
+    width: 300px;
+    height: 280px;
+    position: absolute;
+    top: calc(50% - 140px);
+    left: calc(50% - 150px);
+  }
